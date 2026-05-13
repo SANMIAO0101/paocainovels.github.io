@@ -1,15 +1,110 @@
-<a href="novel1.html">
+<!DOCTYPE html>
+<html lang="zh">
 
-<img src="行动日.jpeg" width="250">
+<head>
 
-</a>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h2>行动日</h2>
+<title>Paocai Novels</title>
 
-<p>现代 / 悬疑 / 连载中</p>
+<style>
 
-<a href="novel1.html">
+body{
+background:#111;
+color:white;
+font-family:sans-serif;
+padding:20px;
+}
 
-<button>开始阅读</button>
+h1{
+text-align:center;
+margin-bottom:40px;
+}
 
-</a>
+.books{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.book{
+background:#1e1e1e;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+
+.book img{
+width:100%;
+border-radius:10px;
+}
+
+.book a{
+text-decoration:none;
+color:white;
+}
+
+.button{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#ff4d8d;
+border-radius:8px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>📚 Paocai Novels</h1>
+
+<div class="books">
+
+<!-- 小说1 -->
+
+<div class="book">
+
+<a href=" ">
+
+< img src="novels/action-day/cover.jpg">
+
+<h2>书名1</h2>
+
+</a >
+
+<p>现代 / 悬疑 / 连载中</p >
+
+<div class="button">
+开始阅读
+</div>
+
+</div>
+
+<!-- 小说2 -->
+
+<div class="book">
+
+<a href="novels/third-eye/index.html">
+
+< img src="novels/third-eye/cover.jpg">
+
+<h2>书名2</h2>
+
+</a >
+
+<p>悬疑 / 推理</p >
+
+<div class="button">
+开始阅读
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
