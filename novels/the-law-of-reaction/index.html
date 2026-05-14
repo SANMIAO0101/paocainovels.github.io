@@ -30,29 +30,66 @@ h1{
 .cover img{
     width:220px;
     border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
 }
 
-/* ===== 简介 ===== */
+/* ===== 小说信息 ===== */
 .info{
     text-align:center;
     color:#555;
-    margin-bottom:30px;
+    margin-bottom:20px;
+}
+
+/* ===== 剧情介绍 ===== */
+.intro{
+    max-width:850px;
+    margin:0 auto 40px auto;
+    background:#fffaf0;
+    border:1px solid #eadfcf;
+    border-radius:12px;
+    padding:25px;
+    color:#555;
+}
+
+.intro h3{
+    margin-top:0;
+    color:#2e8b57;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.intro p{
+    text-indent:2em;
+    line-height:2;
+    margin-bottom:0;
 }
 
 /* ===== 章节目录 ===== */
+.chapter-list{
+    max-width:850px;
+    margin:auto;
+}
+
+.chapter-list h3{
+    color:#2e8b57;
+}
+
 .chapter-list a{
     display:block;
-    padding:8px 0;
+    padding:10px 0;
     color:#1e90ff;
     text-decoration:none;
+    border-bottom:1px dashed #ddd;
 }
+
 .chapter-list a:hover{
     text-decoration:underline;
 }
 
 /* ===== 章节区域 ===== */
 .chapter{
-    margin-top:60px;
+    max-width:850px;
+    margin:60px auto 0 auto;
     padding-top:20px;
     border-top:1px solid #ddd;
 }
@@ -60,28 +97,30 @@ h1{
 .chapter h2{
     text-align:center;
     color:#2e8b57;
+    margin-bottom:30px;
 }
 
 /* ===== 段落 ===== */
 p{
-    margin-bottom:15px;
+    margin-bottom:18px;
     text-indent:2em;
 }
 
 /* ===== 按钮 ===== */
 .btns{
     text-align:center;
-    margin-top:30px;
+    margin-top:40px;
 }
 
 .button{
     display:inline-block;
     padding:10px 18px;
     margin:5px;
-    background:#ff4d8d;
+    background:#ff8fb1;
     color:#fff;
     border-radius:8px;
     text-decoration:none;
+    transition:0.3s;
 }
 
 .button:hover{
@@ -90,7 +129,7 @@ p{
 </style>
 </head>
 
-<body>
+<body id="top">
 
 <!-- ===================== -->
 <!-- 📖 小说信息 + 目录 -->
@@ -99,16 +138,37 @@ p{
 <h1>反作用定律</h1>
 
 <div class="cover">
-    <img src="反作用定律.jpeg">
+    < img src="反作用定律.jpeg">
 </div>
 
 <div class="info">
-    <p>现代 / 久别重逢 / 对抗情侣 / 连载中</p>
+    <p>现代 / 久别重逢 / 对抗情侣 / 连载中</p >
 </div>
 
+<!-- ===== 剧情介绍 ===== -->
+
+<div class="intro">
+
+    <h3>剧情介绍</h3>
+
+    <p>
+    所有人都说，他们像一对注定会两败俱伤的恋人。
+    久别重逢后的再次相遇，没有温情，没有怀念，只有步步试探与针锋相对。
+    曾经亲密无间的人，如今却在彼此最脆弱的地方反复拉扯。
+    爱意与怨恨交缠，沉默与谎言并存。
+    当过去被重新揭开，那些无法说出口的真相，也逐渐将两人推向失控边缘。
+    </p >
+
+</div>
+
+<!-- ===== 章节目录 ===== -->
+
 <div class="chapter-list">
+
     <h3>章节目录</h3>
-    <a href="#c1">第1章</a>
+
+    <a href=" ">第1章</a >
+
 </div>
 
 <!-- ===================== -->
@@ -119,20 +179,33 @@ p{
 
 <h2>第1章</h2>
 
-<p>我以前总是瞧不起那些在地铁站入口或马路中央面对面站着的男男女女，觉得他们好像恨不得对方死。那是因为我以为自己这辈子都不会遇到这种情况。</p>
+<p>
+我以前总是瞧不起那些在地铁站入口或马路中央面对面站着的男男女女，
+觉得他们好像恨不得对方死。那是因为我以为自己这辈子都不会遇到这种情况。
+</p >
 
-<p>他们的关系到底有什么特别之处，非得在所有人面前装出一副剑拔弩张的样子？迟早会分出个结果——要么像生死之交一样黏在一起，要么像狗一样争吵不休，最终分手。如果是这样，他们至少应该避免在人前如此不堪吧？</p>
+<p>
+他们的关系到底有什么特别之处，
+非得在所有人面前装出一副剑拔弩张的样子？
+迟早会分出个结果——要么像生死之交一样黏在一起，
+要么像狗一样争吵不休，最终分手。
+如果是这样，他们至少应该避免在人前如此不堪吧？
+</p >
 
-<p>然而，这种态度只能在从第三方的角度观察他人的关系时才能采取；一旦它真正变成“我自己的事”，情况就发生了变化。</p>
+<p>
+然而，这种态度只能在从第三方的角度观察他人的关系时才能采取；
+一旦它真正变成“我自己的事”，情况就发生了变化。
+</p >
 
 <!-- 按钮 -->
+
 <div class="btns">
 
-    <!-- 返回目录 -->
-    <a class="button" href="#top" onclick="window.scrollTo(0,0)">← 返回顶部</a>
+    <!-- 返回顶部 -->
+    <a class="button" href="#top">← 返回顶部</a >
 
-    <!-- 下一章（预留） -->
-    <a class="button" href="#c2">下一章 →</a>
+    <!-- 下一章 -->
+    <a class="button" href="#c2">下一章 →</a >
 
 </div>
 
@@ -146,10 +219,14 @@ p{
 
 <h2>第2章</h2>
 
-<p>这里是第2章内容（你以后直接替换即可）</p>
+<p>
+这里是第2章内容（你以后直接替换即可）
+</p >
 
 <div class="btns">
-    <a class="button" href="#c1">上一章 ←</a>
+
+    <a class="button" href="#c1">上一章 ←</a >
+
 </div>
 
 </div>
