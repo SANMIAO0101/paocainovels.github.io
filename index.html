@@ -11,13 +11,13 @@
 <style>
 
 body{
-    background:#1b1a17;      /* 背景：柔和深灰咖啡色 */
-    color:#f5eee6;           /* 文字：奶油米色 */
-    font-family: "PingFang SC", "Microsoft YaHei", sans-serif; /* 中文字体柔和 */
+    background:#1b1a17;
+    color:#f5eee6;
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
     padding:20px;
     margin:0;
-    line-height:1.8;         /* 阅读舒适行距 */
-    letter-spacing:0.3px;    /* 微调字间距 */
+    line-height:1.8;
+    letter-spacing:0.3px;
 }
 
 h1{
@@ -26,21 +26,25 @@ h1{
 }
 
 /* 大分类标题 */
+
 .section-title{
     font-size:32px;
     margin-top:60px;
     margin-bottom:20px;
-    border-left:6px solid #c58f7b; /* 左边线柔和米咖色 */
+    border-left:6px solid #c58f7b;
     padding-left:15px;
 }
 
-/* 小分类标题 */
+/* 小分类 */
+
 .category-title{
     font-size:22px;
     margin-top:30px;
     margin-bottom:20px;
-    color:#d8b08c; /* 分类标题柔和米色 */
+    color:#d8b08c;
 }
+
+/* 小说网格 */
 
 .books{
     display:grid;
@@ -49,10 +53,11 @@ h1{
 }
 
 /* 小说卡片 */
+
 .book{
-    background:#2a2925; /* 卡片背景柔和深灰 */
+    background:#2a2925;
     padding:15px;
-    border-radius:10px;
+    border-radius:12px;
     text-align:center;
     transition:0.3s;
 }
@@ -61,28 +66,41 @@ h1{
     transform:translateY(-5px);
 }
 
+/* 封面 */
+
 .book img{
     width:100%;
     border-radius:10px;
 }
 
+/* 链接 */
+
 .book a{
     text-decoration:none;
-    color:#f5eee6; /* 链接文字与整体文字一致 */
+    color:#f5eee6;
 }
+
+/* 按钮 */
 
 .button{
     display:inline-block;
     margin-top:15px;
     padding:10px 20px;
-    background:#c58f7b; /* 按钮柔和米咖色 */
+    background:#c58f7b;
     border-radius:8px;
     color:white;
-    cursor:pointer;
+    text-decoration:none;
+    transition:0.3s;
 }
 
+.button:hover{
+    opacity:0.85;
+}
+
+/* 描述文字 */
+
 p{
-    color:#c9b8a5; /* 副文字：柔和浅米色 */
+    color:#c9b8a5;
     line-height:1.6;
 }
 
@@ -94,83 +112,167 @@ p{
 
 <h1>📚 Paocai Novels</h1>
 
-<!-- 耽美小说 -->
+<!-- ======================= -->
+<!-- 📖 耽美小说 -->
+<!-- ======================= -->
 
 <h2 class="section-title">📖 耽美小说</h2>
 
 <!-- 连载中 -->
+
 <h3 class="category-title">连载中</h3>
 
 <div class="books">
 
+<!-- 小说1 -->
+
 <div class="book">
-    <a href="novels/reaction-law/index.html">
-        <img src="novels/reaction-law/cover.jpg">
+
+    <a href=" ">
+
+        < img src="novels/the-law-of-reaction/cover.jpeg">
+
         <h2>反作用定律</h2>
-    </a>
-    <p>现代 / 久别重逢 / 对抗情侣 / 连载中</p>
-    <div class="button">开始阅读</div>
+
+    </a >
+
+    <p>
+    现代 / 久别重逢 / 对抗情侣 / 连载中
+    </p >
+
+    <a class="button"
+    href="novels/the-law-of-reaction/index.html">
+
+    开始阅读
+
+    </a >
+
 </div>
+
+<!-- 小说2 -->
 
 <div class="book">
+
     <a href="novels/third-eye/index.html">
-        <img src="novels/third-eye/cover.jpg">
+
+        < img src="novels/third-eye/cover.jpg">
+
         <h2>第三只眼</h2>
-    </a>
-    <p>悬疑 / 推理 / 连载中</p>
-    <div class="button">开始阅读</div>
-</div>
+
+    </a >
+
+    <p>
+    悬疑 / 推理 / 连载中
+    </p >
+
+    <a class="button"
+    href="novels/third-eye/index.html">
+
+    开始阅读
+
+    </a >
 
 </div>
 
+</div>
+
+<!-- ======================= -->
 <!-- 已完结 -->
+<!-- ======================= -->
+
 <h3 class="category-title">已完结</h3>
 
 <div class="books">
 
 <div class="book">
+
     <a href="novels/red-light/index.html">
-        <img src="novels/red-light/cover.jpg">
+
+        < img src="novels/red-light/cover.jpg">
+
         <h2>红光闪烁</h2>
-    </a>
-    <p>悬疑 / 都市 / 已完结</p>
-    <div class="button">开始阅读</div>
-</div>
+
+    </a >
+
+    <p>
+    悬疑 / 都市 / 已完结
+    </p >
+
+    <a class="button"
+    href="novels/red-light/index.html">
+
+    开始阅读
+
+    </a >
 
 </div>
 
-<!-- 女频小说 -->
+</div>
+
+<!-- ======================= -->
+<!-- 🌸 女频小说 -->
+<!-- ======================= -->
 
 <h2 class="section-title">🌸 女频小说</h2>
 
 <!-- 连载中 -->
+
 <h3 class="category-title">连载中</h3>
 
 <div class="books">
 
 <div class="book">
+
     <a href="novels/dark-love/index.html">
-        <img src="novels/dark-love/cover.jpg">
+
+        < img src="novels/dark-love/cover.jpg">
+
         <h2>病态迷恋</h2>
-    </a>
-    <p>娱乐圈 / 病娇 / 连载中</p>
-    <div class="button">开始阅读</div>
+
+    </a >
+
+    <p>
+    娱乐圈 / 病娇 / 连载中
+    </p >
+
+    <a class="button"
+    href="novels/dark-love/index.html">
+
+    开始阅读
+
+    </a >
+
 </div>
 
 </div>
 
 <!-- 已完结 -->
+
 <h3 class="category-title">已完结</h3>
 
 <div class="books">
 
 <div class="book">
+
     <a href="novels/villainess/index.html">
-        <img src="novels/villainess/cover.jpg">
+
+        < img src="novels/villainess/cover.jpg">
+
         <h2>恶女法则</h2>
-    </a>
-    <p>西幻 / 恶女 / 已完结</p>
-    <div class="button">开始阅读</div>
+
+    </a >
+
+    <p>
+    西幻 / 恶女 / 已完结
+    </p >
+
+    <a class="button"
+    href="novels/villainess/index.html">
+
+    开始阅读
+
+    </a >
+
 </div>
 
 </div>
